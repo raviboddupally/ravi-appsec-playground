@@ -40,7 +40,7 @@ e.g. http://localhost:3000/#/search?q=...
 
 3\. Go to the search box and intercept the search request with Burp Repeater.
 
-4\. Replace the search parameter value with: "><script>alert('XSS')</script>
+4\. Replace the search parameter value with: <iframe src="javascript:alert('XSS')">
 
 5\. Send the request and observe the response reflects the payload.
 
@@ -48,9 +48,9 @@ e.g. http://localhost:3000/#/search?q=...
 
 \## Screenshots
 
-\- `screenshots/xss-request.png`
+screenshots/xss-request.png
 
-\- `screenshots/xss-response.png`
+screenshots/xss-alert.png
 
 
 
